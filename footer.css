@@ -1,0 +1,43 @@
+/* Footer styling */
+.footer {
+    background-color: #f00;  /* Warna merah sesuai tema */
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+/* Footer info styling */
+.footer-info p {
+    margin: 0.5rem 0;
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-info a:hover {
+    color: black;  /* Hover effect */
+}
+
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-link img {
+        width: 30px;  /* Ukuran ikon lebih kecil di mobile */
+    }
+}

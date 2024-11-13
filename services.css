@@ -1,0 +1,79 @@
+* Styling for Services Section */
+.services {
+    padding: 2rem;
+    background-color: #111;
+    text-align: center;
+}
+
+/* Title for the section */
+.section-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Container for the service boxes */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+/* Service Box Styling */
+.service-box {
+    background-color: #f00;
+    color: white;
+    padding: 1.5rem;
+    width: 300px;  /* Lebar yang lebih besar */
+    height: 400px; /* Tinggi yang lebih besar */
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-box h3 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.service-box p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Styling for the images */
+.service-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Hover effect */
+.service-box:hover {
+    background-color: white;
+    color: #f00;
+    cursor: pointer;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-image {
+        height: auto;
+    }
+}

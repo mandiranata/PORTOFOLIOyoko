@@ -1,0 +1,47 @@
+/* Styling for Skills Section */
+.skills {
+    
+    padding: 2rem;
+    background-color: #111;
+    text-align: center;
+    
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Container for the skill logos */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Memberi jarak lebih besar antar logo */
+    flex-wrap: wrap; /* Agar logo bisa berbaris jika ruang terbatas */
+}
+
+/* Styling for individual skill logos */
+.skill-logo {
+    width: 200px;  /* Ukuran logo lebih besar */
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on the logos */
+.skill-logo:hover {
+    transform: scale(1.2);  /* Membesarkan logo saat di hover */
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .skills-container {
+        justify-content: space-around;
+    }
+
+    .skill-logo {
+        width: 100px;  /* Ukuran logo lebih kecil di mobile */
+        height: 100px;
+    }
+}

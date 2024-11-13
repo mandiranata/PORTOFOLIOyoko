@@ -1,0 +1,66 @@
+/* Styling for Portfolio Section */
+.portfolio {
+    padding: 2rem;
+    background-color: #111;
+    text-align: center;
+    margin-bottom: 50px; /* Jarak 50px dari footer */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Portfolio grid container */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Responsif grid */
+    gap: 2rem;
+}
+
+/* Individual portfolio item */
+.portfolio-item {
+    background-color: #f00;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 1rem;
+}
+
+.portfolio-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-info p {
+    font-size: 1rem;
+}
+
+/* Hover effect */
+.portfolio-item:hover {
+    background-color: white;
+    color: #f00;
+    transform: scale(1.05);
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-image {
+        height: 150px;
+    }
+}
